@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          list-style: none;
+}
+
+body{
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 5%;
+          background: #ededed;
+}
+
+body, 
+body *{
+          font-family: 'Poppins', sans-serif;
+          font-size: 15px;
+}
+
+section{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+}
+
+.navFilter{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 600px;
+          background: #fff;
+          padding: 20px 50px;
+          border-radius: 10px;
+          margin: 0 0 50px 0;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+ul,
+li,
+button{
+          cursor: pointer;
+}
+
+.amountInpt{
+          border: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+          color: #000;
+          padding: 0 10px;
+          width: 40px;
+          transition: .2s ease;
+          text-align: center;
+          margin: 0 0 0 5px;
+}
+
+.amountInpt:focus{
+          outline: none;
+          border-bottom: 1px solid #000;
+}
+
+.amountInpt::placeholder{
+          font-size: 12px;
+          text-align: center;
+}
+
+.cat1{
+  position: relative;
+  padding: 5px 0px 5px 15px;
+  width: 180px;
+  text-align: left;
+}
+
+.cat1:hover .cat2{
+  display: block;
+}
+
+.cat2{
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          background: #fff;
+          width: 100%;
+          text-align: left;
+}
+
+.cat2 > li{
+  padding: 5px 0px 5px 15px;
+}
+
+.cat2 > li:hover{
+  background: #ededed;
+}
+
+.arrowDown{
+          font-size: 13px;
+          margin: 0 0 0 5px;
+}
+
+.btn{
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 2px 5px;
+}
+
+.btn:hover{
+  background: #ededed;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.amountInpt::-webkit-outer-spin-button,
+.amountInpt::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.amountInpt[type=number] {
+  -moz-appearance: textfield;
+}
